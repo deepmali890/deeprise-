@@ -25,7 +25,6 @@ const Sidebar = () => {
     { label: "Services", icon: <AiOutlineTool size={20} />, path: "/service" },
     { label: "Experience", icon: <AiOutlineBook size={20} />, path: "/experience" },
     { label: "Works", icon: <AiOutlineAppstore size={20} />, path: "/works" },
-    { label: "Blog", icon: <AiOutlineEdit size={20} />, path: "/blog" },
     { label: "Contact", icon: <AiOutlineMessage size={20} />, path: "/contact" },
   ];
 
@@ -67,14 +66,14 @@ const Sidebar = () => {
 
       {/* Social Icons */}
       <div className="flex flex-col items-center space-y-4 py-6">
-        <div className="flex gap-3">
-          <a href="#" className="bg-white p-2 rounded-lg shadow hover:scale-105 transition">
+        <div className="grid grid-cols-3 gap-5">
+          <a href="" className="bg-white p-2 rounded-lg shadow hover:scale-105 transition">
             <AiFillFacebook size={20} className="text-[#3b5998]" />
           </a>
           <a href="#" className="bg-white p-2 rounded-lg shadow hover:scale-105 transition">
             <AiOutlineTwitter size={20} className="text-[#1DA1F2]" />
           </a>
-          <a href="#" className="bg-white p-2 rounded-lg shadow hover:scale-105 transition">
+          <a href="https://www.instagram.com/dilip.saini_/" className="bg-white p-2 rounded-lg shadow hover:scale-105 transition">
             <AiFillInstagram size={20} className="text-[#E4405F]" />
           </a>
           <a href="#" className="bg-white p-2 rounded-lg shadow hover:scale-105 transition">

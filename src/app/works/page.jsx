@@ -8,52 +8,60 @@ const Page = () => {
 
   const portfolioItems = [
     {
-      title: "Food Recipe App",
+      title: "Full Stack Development.",
+      category: "development",
+      tag: "Explore Bharat",
+      img: "./exploreBharat.png",
+      link: "https://explorebharat-eta.vercel.app/", // Add the project link here
+    },
+    {
+      title: "Full stack Development",
+      category: "development",
+      tag: "Book Vault",
+      img: "./bookVault.png",
+      link: "https://book-vault-gamma.vercel.app/", // Add the project link here
+    },
+    {
+      title: "Full stack Development",
+      category: "development",
+      tag: "franAndOak",
+      img: "./franAndOak.png",
+      link: "https://franandoak.com", // Add the project link here
+    },
+    {
+      title: "Netflix Clone",
       category: "Design",
-      tag: "Image",
-      img: "https://source.unsplash.com/400x300/?food,app",
+      tag: "NetFlix Clone",
+      img: "netflix.png",
+      link: "https://netflix-puce-alpha.vercel.app/", // Add the project link here
     },
     {
-      title: "Task Management Mockup",
-      category: "Branding, Development",
-      tag: "Detailed",
-      img: "https://source.unsplash.com/400x300/?productivity,design",
-    },
-    {
-      title: "iPhone 12 Clay Mockup",
-      category: "Advertisement",
-      tag: "Video",
-      img: "https://source.unsplash.com/400x300/?iphone,mockup",
-    },
-    {
-      title: "Dashboard UI",
-      category: "Development",
-      tag: "Gallery",
-      img: "https://source.unsplash.com/400x300/?dashboard,ui",
-    },
-    {
-      title: "Audio App Design",
+      title: "LensCart Clone",
       category: "Design",
-      tag: "Audio",
-      img: "https://source.unsplash.com/400x300/?music,app",
+      tag: "LensCart",
+      img: "./lenscart.png",
+      link: "https://lenscart.vercel.app/", // Add the project link here
     },
     {
-      title: "E-commerce Branding",
-      category: "Branding",
-      tag: "Link",
-      img: "https://source.unsplash.com/400x300/?ecommerce,brand",
+      title: "Frontend",
+      category: "Design",
+      tag: "Packshift",
+      img: "./packshifty.png",
+      link: "https://packshift-blond.vercel.app/", // Add the project link here
     },
     {
-      title: "Advertisement Banner",
-      category: "Advertisement",
-      tag: "Ad",
-      img: "https://source.unsplash.com/400x300/?banner,ad",
+      title: "Tutorials Freak Clone",
+      category: "Design",
+      tag: "Tutorials Freak",
+      img: "./tutorilsFreak.png",
+      link: "https://tutorials-freak.vercel.app/", // Add the project link here
     },
     {
-      title: "Portfolio Site",
+      title: "Notes App",
       category: "Development",
-      tag: "Live",
-      img: "https://source.unsplash.com/400x300/?website,portfolio",
+      tag: "Notes App",
+      img: "./iPhone-13-PRO-notes-app-sigma-fawn.vercel.app.png.png",
+      link: "https://notes-app-sigma-fawn.vercel.app/", // Add the project link here
     },
   ];
 
@@ -91,8 +99,11 @@ const Page = () => {
           {/* Filtered Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredItems.map((item, i) => (
-              <div
+              <a
                 key={i}
+                href={item.link} // Wrap the entire portfolio item with the link
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-xl overflow-hidden bg-white shadow-sm group transition hover:shadow-lg"
               >
                 <div className="relative overflow-hidden">
@@ -106,12 +117,10 @@ const Page = () => {
                   </span>
                 </div>
                 <div className="p-4">
-                  <h3 className="text-md font-semibold text-gray-800">
-                    {item.title}
-                  </h3>
+                  <h3 className="text-md font-semibold text-gray-800">{item.title}</h3>
                   <p className="text-sm text-gray-500">{item.category}</p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
 

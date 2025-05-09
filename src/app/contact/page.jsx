@@ -16,7 +16,7 @@ const page = () => {
             </div>
             <div>
               <h4 className="font-semibold text-gray-800">Phone</h4>
-              <p className="text-gray-500 text-sm">+1-202-555-0135</p>
+              <p className="text-gray-500 text-sm">+91 9636249430</p>
             </div>
           </div>
 
@@ -26,7 +26,7 @@ const page = () => {
             </div>
             <div>
               <h4 className="font-semibold text-gray-800">E-Mail</h4>
-              <p className="text-gray-500 text-sm">hello@example.com</p>
+              <p className="text-gray-500 text-sm">deeprise.in@gmail.com</p>
             </div>
           </div>
 
@@ -36,7 +36,7 @@ const page = () => {
             </div>
             <div>
               <h4 className="font-semibold text-gray-800">Location</h4>
-              <p className="text-gray-500 text-sm">California, USA</p>
+              <p className="text-gray-500 text-sm">Pali, Rajastahan</p>
             </div>
           </div>
         </div>

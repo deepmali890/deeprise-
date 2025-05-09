@@ -7,14 +7,14 @@ import { FaBox, FaSmile, FaGift } from 'react-icons/fa';
 const page = () => {
 
   const skills = [
-    { label: "HTML", percent: 70, color: "bg-orange-300" },
-    { label: "CSS", percent: 80, color: "bg-cyan-300" },
-    { label: "Java Script", percent: 95, color: "bg-green-400" },
+    { label: "HTML", percent: 95, color: "bg-orange-300" },
+    { label: "CSS", percent: 95, color: "bg-cyan-300" },
+    { label: "Java Script", percent: 90, color: "bg-green-400" },
     { label: "Node", percent: 90, color: "bg-purple-400" },
-    { label: "React", percent: 85, color: "bg-pink-400" },
-    { label: "Mongo DB", percent: 65, color: "bg-yellow-400" },
-    { label: "PostGreSQL", percent: 65, color: "bg-yellow-400" },
-    { label: "React Native", percent: 65, color: "bg-yellow-400" },
+    { label: "React", percent: 95, color: "bg-pink-400" },
+    { label: "Mongo DB", percent: 90, color: "bg-yellow-400" },
+    { label: "PostGreSQL", percent: 70, color: "bg-blue-400" },
+    { label: "React Native", percent: 70, color: "bg-red-400" },
   ];
 
   return (
@@ -80,7 +80,7 @@ const page = () => {
                 </div>
                 <div>
                   <p className="text-gray-500 pb-4">Residence</p>
-                  <p className=" text-gray-800">USA</p>
+                  <p className=" text-gray-800">India</p>
                 </div>
                 <div>
                   <p className="text-gray-500 pb-4">Email</p>
@@ -118,21 +118,21 @@ const page = () => {
           {/* Card 1 */}
           <div className="bg-white/1 backdrop-blur-lg rounded-2xl p-6 shadow-sm">
             <FaBox size={36} className="text-purple-500 mb-4" />
-            <h3 className="text-3xl font-semibold text-gray-800">205</h3>
+            <h3 className="text-3xl font-semibold text-gray-800">17</h3>
             <p className="text-gray-500">Projects finished</p>
           </div>
 
           {/* Card 2 */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 shadow-sm">
             <FaSmile size={36} className="text-orange-500 mb-4" />
-            <h3 className="text-3xl font-semibold text-gray-800">567</h3>
+            <h3 className="text-3xl font-semibold text-gray-800">10</h3>
             <p className="text-gray-500">Happy customers</p>
           </div>
 
           {/* Card 3 */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 shadow-sm">
             <FaGift size={36} className="text-pink-500 mb-4" />
-            <h3 className="text-3xl font-semibold text-gray-800">59</h3>
+            <h3 className="text-3xl font-semibold text-gray-800">3</h3>
             <p className="text-gray-500">Awards winner</p>
           </div>
         </div>
