@@ -25,7 +25,7 @@ const Page = () => {
       title: "Full stack Development",
       category: "development",
       tag: "PlanNest",
-      img: "./iPhone-13-PRO-plannest.netlify.app.png",
+      img: "./plannest.png",
       link: "https://plannest.netlify.app/", // Add the project link here
     },
     {
