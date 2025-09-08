@@ -24,9 +24,9 @@ const Page = () => {
     {
       title: "Full stack Development",
       category: "development",
-      tag: "franAndOak",
-      img: "./franAndOak.png",
-      link: "https://franandoak.com", // Add the project link here
+      tag: "PlanNest",
+      img: "./iPhone-13-PRO-plannest.netlify.app.png",
+      link: "https://plannest.netlify.app/", // Add the project link here
     },
     {
       title: "Netflix Clone",
