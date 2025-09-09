@@ -8,21 +8,28 @@ const Page = () => {
 
   const portfolioItems = [
     {
-      title: "Full Stack Development.",
+      title: "Explore Bharat.",
       category: "development",
       tag: "Explore Bharat",
       img: "./exploreBharat.png",
       link: "https://explorebharat-eta.vercel.app/", // Add the project link here
     },
     {
-      title: "Full stack Development",
+      title: "Book Vault",
       category: "development",
       tag: "Book Vault",
       img: "./bookVault.png",
       link: "https://book-vault-gamma.vercel.app/", // Add the project link here
     },
     {
-      title: "Full stack Development",
+      title: "DreamNest",
+      category: "development",
+      tag: "DreamNest",
+      img: "./dreamnest.png",
+      link: "https://dreamnest-real-state.netlify.app/", // Add the project link here
+    },
+    {
+      title: "PlanNest",
       category: "development",
       tag: "PlanNest",
       img: "./plannest.png",
@@ -70,8 +77,8 @@ const Page = () => {
     activeCategory === "All Projects"
       ? portfolioItems
       : portfolioItems.filter((item) =>
-          item.category.toLowerCase().includes(activeCategory.toLowerCase())
-        );
+        item.category.toLowerCase().includes(activeCategory.toLowerCase())
+      );
 
   return (
     <div className="overflow-scroll">
@@ -85,11 +92,10 @@ const Page = () => {
               <button
                 key={index}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-4 py-1 rounded-full text-sm font-medium transition ${
-                  activeCategory === cat
+                className={`px-4 py-1 rounded-full text-sm font-medium transition ${activeCategory === cat
                     ? "bg-orange-100 text-orange-500"
                     : "bg-white text-gray-500 hover:bg-gray-100"
-                } shadow-sm`}
+                  } shadow-sm`}
               >
                 {cat}
               </button>
